@@ -465,7 +465,7 @@ public class MainView extends JFrame implements IMainView, ActionListener
     {
         if(this.filechooser == null)
         {
-            this.filechooser = new JFileChooser();
+            this.filechooser = new JFileChooser(".");
             this.filechooser.setFileFilter(new UniversalFileFilter("txt"));
             this.filechooser.setAcceptAllFileFilterUsed(false);
             this.filechooser.setMultiSelectionEnabled(false);

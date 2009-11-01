@@ -49,12 +49,12 @@ public class MainController
 	
 	public void createDefaultConfig()
 	{
-		Configuration.getConfigInstance().addConfigEntry(new ConfigurationEntry("backgroundColor", "0"));
-		Configuration.getConfigInstance().addConfigEntry(new ConfigurationEntry("textColor", "-1"));
-		Configuration.getConfigInstance().addConfigEntry(new ConfigurationEntry("vowelColor", "-255"));
-		Configuration.getConfigInstance().addConfigEntry(new ConfigurationEntry("fontSize", "110"));
-		Configuration.getConfigInstance().addConfigEntry(new ConfigurationEntry("font", "Arial"));
-		Configuration.getConfigInstance().addConfigEntry(new ConfigurationEntry("delay", "1000"));
+		Configuration.getConfigInstance().addConfigEntry(new ConfigurationEntry("backgroundColor", "-3355393"));
+		Configuration.getConfigInstance().addConfigEntry(new ConfigurationEntry("textColor", "-16777216"));
+		Configuration.getConfigInstance().addConfigEntry(new ConfigurationEntry("vowelColor", "-3407872"));
+		Configuration.getConfigInstance().addConfigEntry(new ConfigurationEntry("fontSize", "160"));
+		Configuration.getConfigInstance().addConfigEntry(new ConfigurationEntry("font", "Century Gothic"));
+		Configuration.getConfigInstance().addConfigEntry(new ConfigurationEntry("delay", "700"));
 		Configuration.getConfigInstance().addConfigEntry(new ConfigurationEntry("asterisk", "#"));
 		Configuration.getConfigInstance().addConfigEntry(new ConfigurationEntry("showAsterisk", "false"));
 		Configuration.getConfigInstance().addConfigEntry(new ConfigurationEntry("showSeparator", "false"));
@@ -225,7 +225,7 @@ public class MainController
         {
 			if(this.wordCount == 0)
 			{
-				new SuccessView(this.mainView).show(this.mainView, new File("bilder/finished.jpg"));
+				new SuccessView(this.mainView).show(this.mainView, new File("Bilder/finished.jpg"));
 				this.resetCounter();
 			}
         }
@@ -308,7 +308,7 @@ public class MainController
     
     public void aboutPopUp()
     {
-        this.mainView.showInfomessage("Wissenschaftliche Leitung: Dr. Christiane Ritter\nTechnische Umsetzung: Thomas Ritter\n2007 All rights reserved");
+        this.mainView.showInfomessage("Version: 1.1.1\nWissenschaftliche Leitung: Dr. Christiane Ritter\nTechnische Umsetzung: Thomas Ritter\n2007 All rights reserved");
     }
     
     public void toogleAsterisk()

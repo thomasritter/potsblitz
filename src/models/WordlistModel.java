@@ -19,12 +19,11 @@ import java.util.Vector;
 public class WordlistModel
 {
 	private Vector<String> wordlist;
-	private int pointer = 0;
-	
+	private int pointer = -1;
+
 	public WordlistModel()
 	{
 		wordlist = new Vector<String>();
-		pointer = 0;
 	}
 	
 	public void addWord(String word)
@@ -36,6 +35,9 @@ public class WordlistModel
 	{
 		if(this.wordlist.size() > 0)
 		{
+			if(this.pointer == -1) {
+				this.pointer++;
+			}
 			return (String)this.wordlist.get(pointer);
 		}
 		else
@@ -51,7 +53,7 @@ public class WordlistModel
 			pointer++;
 			return (String)wordlist.get(pointer);
 		}
-		return "";
+		return null;
 	}
 	
 	public String getNextRandomWord()

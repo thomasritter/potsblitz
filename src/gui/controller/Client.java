@@ -18,7 +18,7 @@ public class Client
 	 */
 	public static void main(String[] args)
 	{
-		splashScreen = new SplashScreen("bilder/splash.jpg");
+		splashScreen = new SplashScreen("Bilder/splash.jpg");
 		MainController controller = new MainController();
 		WordlistModel list = new WordlistModel();
 		controller.setModel(list);

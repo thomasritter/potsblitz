@@ -25,7 +25,7 @@ public class WordListModelTests extends TestCase
 		assertEquals("test1", model.getCurrentWord());
 		assertEquals("test2", model.getNextWord());
 		assertEquals("test3", model.getNextWord());
-		assertEquals("", model.getNextWord());
+		assertEquals(null, model.getNextWord());
 	}
 	
 	public void testPreviousWord()

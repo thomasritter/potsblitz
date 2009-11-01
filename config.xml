@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<configuration>
+<entry name="backgroundColor" value="-3355393"/>
+<entry name="textColor" value="-16777216"/>
+<entry name="vowelColor" value="-3407872"/>
+<entry name="fontSize" value="160"/>
+<entry name="font" value="Century Gothic"/>
+<entry name="delay" value="700"/>
+<entry name="asterisk" value="#"/>
+<entry name="showAsterisk" value="false"/>
+<entry name="showSeparator" value="false"/>
+<entry name="highlightVowels" value="false"/>
+<entry name="showRandom" value="false"/>
+<entry name="maximumWords" value="3"/>
+<entry name="countWords" value="true"/>
+</configuration>
